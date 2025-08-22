@@ -1,0 +1,1 @@
+<?php echo "<h2>Contact your admin to create account.</h2>"?>
