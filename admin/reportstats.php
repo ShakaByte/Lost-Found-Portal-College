@@ -22,8 +22,9 @@ $result=mysqli_query($conn,$sql);
         </header>
         <div class="navbar">
             <a href="admindb.php">Home</a>
-            <a href="#usermanagement">User Management</a>
             <a href="reportstats.php">Report Status</a>
+            <a href="../auth/addnewuser.php">Add New User</a>
+            <button><a href="../auth/logout.php">Log Out</a></button>
         </div>
     </div>
     <!--header end-->
