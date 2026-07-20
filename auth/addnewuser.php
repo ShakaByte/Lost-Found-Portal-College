@@ -41,12 +41,21 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lost And Found Sign Up- RYMEC</title>
     <link rel="stylesheet" href="../assets/css/stylesheet.css">
+    <link rel="stylesheet" href="../assets/css/admin.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="container">
-        <header class="header">WELCOME TO LOST AND FOUND PORTAL - R . Y . M . E . C</header>
-        <p class="sub-header">Loose Physically, Find Digitally.</p>
+    <div class="top-head">
+        <header>
+            <h2>LOST OR FOUND - R . Y . M . E . C</h2>
+            <p>Loose Physically, Find Digitally</p>
+        </header>
+        <div class="navbar">
+            <a href="../admin/admindb.php">Home</a>
+            <a href="../admin/reportstats.php">Report Status</a>
+            <a href="addnewuser.php">Add New User</a>
+            <button><a href="logout.php">Log Out</a></button>
+        </div>
     </div>
     <div class="form-container">
         <div class="form-header">
