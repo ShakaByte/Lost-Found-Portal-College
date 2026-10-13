@@ -1,19 +1,57 @@
-# Lost-Found-Portal-College
-A mini project developed in 2nd year for Database Management Systems course. It is a web based Lost and Found Portal for college campus, enabling students to report, search and claim lost items efficiently. Features include item categorization, image uploads and user authentication. 
+# 🔍 Lost-Found-Portal-College
 
-This portal lets students create, retrive, update, search and delete their posts made by them and others. 
+A web-based Lost and Found portal for college campuses, built as a 2nd-year mini project for the Database Management Systems course.
 
-Features included for students-
-- Creating posts for lost items and found items.
-- viewing the status of their posts in their profile.
-- viewing and searching posts category-wise made by other students.
+## 📌 Overview
 
-Features included for admin-
-- managing users and creating new users.
-- viewing all the posts made by students and managing the posts which have been claimed and deleting the unnecessary or unwanted posts.
+Students can report lost or found items, search posts by category, and track the status of their own posts. Admins manage users and moderate posts, including marking items as claimed and removing unwanted posts.
 
-  SQL Database Format:
+## ❗ Problem Statement
 
+Lost items on campus are usually reported through word of mouth, notice boards, or group chats.
+- Posts get buried and are hard to search
+- No record of whether an item was claimed
+- No way to categorize or filter items
+- No moderation of old or irrelevant posts
+
+## ✅ Solution
+
+A centralized portal with user authentication, categorized posts, image uploads, and claim tracking.
+
+**Student features**
+- Create lost and found posts with images
+- View the status of their own posts in their profile
+- Search and browse other students' posts by category
+- Update and delete their own posts
+
+**Admin features**
+- Create and manage users
+- View all posts and mark claimed items
+- Delete unnecessary or unwanted posts
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|-------|------------|
+| Frontend | HTML, CSS, [JavaScript] |
+| Backend | PHP |
+| Database | MySQL |
+
+## 🗄️ Database Schema
+
+Four tables:
+
+| Table | Purpose |
+|-------|---------|
+| `users` | Accounts with name, email, password and role |
+| `items` | Posts with type, category, description, image path and claim status |
+| `founditems` | Details of found items reported by students |
+| `lostitems` | Details of lost items reported by students |
+
+<details>
+<summary>View full SQL schema</summary>
+
+```sql
 CREATE DATABASE IF NOT EXISTS lostfound;
 USE lostfound;
 
@@ -69,6 +107,4 @@ CREATE TABLE lostitems (
     imgpath VARCHAR(255),
     addet TEXT
 );
-
-
-  Author : ShakaByte
+```
